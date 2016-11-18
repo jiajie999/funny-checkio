@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 
-#best answer
-#checkio=lambda d:[x for x in d if d.count(x)>1]
+# best answer
+# checkio=lambda d:[x for x in d if d.count(x)>1]
 
 def checkio(data):
     l = list(data)
@@ -13,15 +13,15 @@ def checkio(data):
             o.append(i)
     return o
 
-#Some hints
-#You can use list.count(element) method for counting.
-#Create new list with non-unique elements
-#or remove elements from original list (but it's bad practice for many real cases)
-#Loop over original list
+# Some hints
+# You can use list.count(element) method for counting.
+# Create new list with non-unique elements
+# or remove elements from original list (but it's bad practice for many real cases)
+# Loop over original list
 
 
 if __name__ == "__main__":
-    #print checkio([1, 2, 3, 1, 3])
+    # print checkio([1, 2, 3, 1, 3])
     assert isinstance(checkio([1]), list), "The result must be a list"
     assert checkio([1, 2, 3, 1, 3]) == [1, 3, 1, 3], "1st example"
     assert checkio([1, 2, 3, 4, 5]) == [], "2nd example"
